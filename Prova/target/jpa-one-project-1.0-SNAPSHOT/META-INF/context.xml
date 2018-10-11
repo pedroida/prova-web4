@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+    <Realm className="org.apache.catalina.realm.JDBCRealm"
+           driverName="com.mysql.jdbc.Driver"
+           connectionURL="jdbc:mysql://localhost:3306/prova_web4"
+           connectionName="root"
+           connectionPassword="root"
+           userTable="users" userNameCol="login" userCredCol="password"
+           userRoleTable="user_roles" roleNameCol="role">
+        <CredentialHandler className="org.apache.catalina.realm.MessageDigestCredentialHandler" algorithm="SHA-256"/>
+    </Realm>
+</Context>

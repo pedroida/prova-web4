@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="Prova:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="jpa-one-project-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="Prova:war exploded" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="jpa-one-project" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="jpa-one-project/web/Web" />
+    </root>
+  </artifact>
+</component>
