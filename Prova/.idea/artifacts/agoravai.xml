@@ -24,6 +24,8 @@
           <element id="library" level="project" name="Maven: javax.activation:javax.activation-api:1.2.0" />
           <element id="library" level="project" name="Maven: mysql:mysql-connector-java:5.1.44" />
           <element id="library" level="project" name="Maven: log4j:log4j:1.2.17" />
+          <element id="library" level="project" name="Maven: org.apache.tomcat:tomcat-jdbc:8.5.32" />
+          <element id="library" level="project" name="Maven: org.apache.tomcat:tomcat-juli:8.5.32" />
         </element>
       </element>
       <element id="javaee-facet-resources" facet="jpa-one-project/web/Web" />

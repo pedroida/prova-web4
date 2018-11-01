@@ -7,7 +7,7 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
 
-    <name>jpa-one-project</name>
+    <name>Prova</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -30,11 +30,18 @@
             <artifactId>hibernate-core</artifactId>
             <version>5.3.3.Final</version>
         </dependency>
+        <!--<dependency>-->
+            <!--<groupId>org.apache.tomcat</groupId>-->
+            <!--<artifactId>tomcat-jdbc</artifactId>-->
+            <!--<version>8.5.32</version>-->
+            <!--<scope>provided</scope>-->
+        <!--</dependency>-->
         <!-- MySQL -->
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
             <version>5.1.44</version>
+            <scope>provided</scope>
         </dependency>
 
         <!-- LOG -->

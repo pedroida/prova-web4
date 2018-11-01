@@ -1,55 +1,31 @@
 <%@page contentType="text/html" pageEncoding="UTF-8" %>
 <%@taglib prefix="t" tagdir="/WEB-INF/tags" %>
 
-<t:template title="Compra e venda Pedrão">
+<t:template title="Novo Produto">
     <jsp:body>
-        <div class="col s12">
-            <div class="card">
-                <div class="card-content">
-                    <div class="row">
-                        <form class="col s12">
-                            <div class="row">
-                                <div class="input-field col s12">
-                                    <input id="title" name="title" type="text" class="validate">
-                                    <label for="title">Título</label>
-                                </div>
-                                <div class="input-field col s12">
-                                    <input id="description" name="description" type="text" class="validate">
-                                    <label for="description">Descrição</label>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="input-field col s6">
-                                    <input id="quantity" name="quantity" type="text" class="validate">
-                                    <label for="quantity">Quantidade</label>
-                                </div>
-                                <div class="input-field col s6">
-                                    <input id="price" name="price" type="text" class="validate">
-                                    <label for="price">Preço</label>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="input-field col s3">
-                                    <input id="validity" name="validity" type="text" class="datepicker validate">
-                                    <label for="validity">Validade</label>
-                                </div>
-                                <div class="input-field col s3">
-                                    <input id="unit" name="unit" type="text" class="validate">
-                                    <label for="unit">Unidade</label>
-                                </div>
-                            </div>
-                            <button class="btn left">Voltar</button>
-                            <button type="submit" class="btn right">Salvar</button>
-                        </form>
+        <div class="page-title-area">
+            <div class="row align-items-center">
+                <div class="col-sm-6 m-2">
+                    <div class="breadcrumbs-area clearfix">
+                        <h4 class="page-title pull-left">${breadcrumb}</h4>
+                        <ul class="breadcrumbs pull-left">
+                            <li><a href="/online/index">Home</a></li>
+                            <li><span>${breadcrumb}</span></li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-        <script>
-            document.addEventListener('DOMContentLoaded', function() {
-                var elems = document.querySelectorAll('.datepicker');
-                var instances = M.Datepicker.init(elems, options);
-            });
-        </script>
+        <!-- page title area end -->
+        <t:product-formt/>
+        </div>
+        <!-- main content area end -->
+        <!-- footer area start-->
+        <footer>
+            <div class="footer-area">
+                <p>© Copyright 2018 . Todos os direitos reservados</p>
+            </div>
+        </footer>
+        <!-- footer area end-->
     </jsp:body>
 </t:template>
